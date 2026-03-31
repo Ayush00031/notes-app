@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Notes App
 
-## Getting Started
+This is an AI-powered note-taking app.
 
-First, run the development server:
+## Features
 
-```bash
+Create, edit, and delete notes
+Search notes efficiently
+Ask AI questions about your notes
+Authentication using Supabase
+Fast and optimized UI with Next.js
+Modern UI with Tailwind CSS
+Database management with Prisma
+
+# Tech Stack
+
+Frontend & Backend
+Next.js (App Router)
+Database & Auth
+Supabase (Auth + Database)
+Prisma ORM
+Styling
+Tailwind CSS
+ShadCN UI
+AI Integration
+OpenAI
+
+# Project Structure
+
+app/ # Next.js app directory
+components/ # Reusable UI components
+lib/ # Utilities (AI, auth)
+db/ # DB, Prisma schema
+public/ # Static assets
+
+# Installation & Setup
+
+1. Clone the repository
+   git clone https://github.com/your-username/ai-notes-app.git
+   cd ai-notes-app
+
+2. Install dependencies
+   npm install
+3. Setup environment variables
+
+Create a .env file:
+
+# Supabase
+
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+
+# Database (Prisma)
+
+DATABASE_URL=your_database_url
+
+# AI API
+
+OPENAI_API_KEY=your_key
+
+# or
+
+GEMINI_API_KEY=your_key 4. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+App will run on:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# AI Feature Explanation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+User notes are fetched from the database
+Notes are sent as context to the AI model
+AI answers user queries based on stored notes
+Responses are rendered as formatted HTML
 
-## Learn More
+# Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+![Home Page](./public\homesnap.png)
+![loginscreen](./public/loginscr.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ayush Rawat
